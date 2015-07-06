@@ -519,7 +519,7 @@ static const char template_header[] = {
 {
     NSData *stringData = [string dataUsingEncoding:NSASCIIStringEncoding];
     memset(charArray, '\0', size);
-    [stringData getBytes:charArray length:[stringData length]];
+    [stringData getBytes:charArray length:size-1];
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 #pragma mark - Formatting
